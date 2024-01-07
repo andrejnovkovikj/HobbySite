@@ -1,0 +1,13 @@
+.center {
+    margin: 2px;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.center2 {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}

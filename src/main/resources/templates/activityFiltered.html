@@ -1,0 +1,20 @@
+<h3>TEST</h3>
+<tr th:each="activity:${activity}" class="item">
+    <div class="container-fluid"  >
+        <div class="card-deck ">
+            <div class="row d-flex justify-content-center ">
+                <div class="card  bg-new col-8 m-4" style="width: 600px; height: 600px; padding: 7px;" >
+                    <div style="text-align: center;">
+                        <img class="card-img-top col-8 m-3 text-center" th:src="${activity.image_url}"  style="width: 400px;height: 400px;">
+                    </div>
+                    <h4 class="card-title text-center"><td th:text="${activity.name}">[activity.name]</td></h4>
+                    <div style="text-align: center;">
+                        <button style="width: 434px;" class="btn btn-dark btnblock col-6 justify-content-center"><a style="color: white" th:href="@{'/activity/'+ ${activity.id}}">Go to the product page</a></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</tr>
